@@ -1,6 +1,7 @@
+/* eslint-disable no-console */
 const fs = require('fs');
-const Order = require('../OrdersValidation');
-const Constructor = require('../OrderConstructor');
+const Order = require('../validation/OrdersValidation');
+const Constructor = require('../helper/OrderConstructor');
 
 function readOrder(orderPath) {
   fs.readdir(orderPath, (err, txts) => {

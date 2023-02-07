@@ -8,12 +8,7 @@ class NoteValidator {
   }
 
   noteValidator() {
-    this.note.data.map((note) => {
-      this.typesValidator(note);
-      return true;
-    });
-
-    console.log('----------------------------------------------------------------------');
+    this.note.data.map(this.typesValidator);
   }
 
   typesValidator(note) {

@@ -30,6 +30,4 @@ function readOrder(orderPath) {
   });
 }
 
-module.exports = {
-  readOrder,
-};
+module.exports = readOrder;
